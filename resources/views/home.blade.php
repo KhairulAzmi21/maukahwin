@@ -9,6 +9,7 @@
 
                 <div class="panel-body">
                     You are logged in!
+                    <h2> Domain Name : {{ auth()->user()->domain }}</h2>
                     <a href="{{ route('profile.edit',auth()->user()->profile->id)}}"/>Edit Your Profile</a>
 
                     <div class="table-responsive">
